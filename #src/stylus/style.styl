@@ -49,6 +49,9 @@ body
     transform translate(0, -50%)
     firstLevelElementsMargin 8
 
+  &__bg-img
+    width 80%
+
   .logo
     display inline-block
 
@@ -72,6 +75,7 @@ body
   h2
     padding 8px 40px 8px 40px
     background #000
+    word-break break-word
 
   &_left
     &:before
@@ -84,7 +88,7 @@ body
 
 .arrows-block
   background url('../img/bg-shadowArrow.png') repeat
-  margin 20px 20px 20px 10px
+  margin 10px 10px 10px 10px
   min-width 38px
 
   &_free
@@ -92,7 +96,7 @@ body
 
 .offer
   flex-set row nowrap
-  padding 30px 0 30px 0
+  padding 20px 0 20px 0
 
   &_right
     flex-set row-reverse nowrap
@@ -111,6 +115,7 @@ body
         margin 0 0 0 auto
 
   &__body
+    flex 0 1 50%
 
     &:after
       background #FBFBFB
@@ -124,6 +129,8 @@ body
 
   &__collab-brand-imgcontainer
     position relative
+    img
+      block-size 100%
 
   &__collab-brand-img
     position absolute
@@ -139,7 +146,8 @@ body
   flex-grow 1
   border-top-right-radius 30px
   border-bottom-right-radius 30px
-  padding 0 20px 0 20px
+  padding 5px 20px 5px 20px
+  min-height 300px
 
   *
     z-index 2
@@ -153,6 +161,72 @@ body
     filter blur(2px)
     z-index 1
     content ''
-  // &_right
 
-    
+  &_container
+    flex-set row nowrap
+
+    .product-block
+      border-top-left-radius 30px
+      border-bottom-left-radius 30px
+
+      &:after
+        border-top-right-radius 30px
+        border-bottom-right-radius 30px
+
+  &_container_right
+    flex-set row-reverse nowrap
+
+    .product-block
+      border-top-left-radius 30px
+      border-bottom-left-radius 30px
+
+      &:after
+        border-top-right-radius 0
+        border-bottom-right-radius 0
+        border-top-left-radius 30px
+        border-bottom-left-radius 30px
+
+.collection
+  align-items center
+  padding 10px 0 10px 0
+
+  &__body
+    padding 20px 20px 20px 20px
+
+    &:after
+      background #EBF5ED
+      filter blur(1px)
+
+  .collection__image
+    position relative
+
+    &:after
+      position absolute
+      bottom -2%
+      left 50%
+      transform translate(-50%, -50%)
+      height 7px
+      width 50%
+      background #000
+      content ''
+
+  &__title-block
+    padding 20px 20px 20px 20px
+    text-align center
+    position relative
+    font-family Roboto-b
+    font-size 20px
+    background url('../img/bg-linesBox.jpg') no-repeat center / cover
+
+  &__title
+    position relative
+    z-index 3
+    display inline-block
+    color #fff
+    background #000
+    padding 40px 8px 40px 8px
+    writing-mode tb-rl
+    text-transform uppercase
+
+    &_reverse
+      transform rotate(180deg)
