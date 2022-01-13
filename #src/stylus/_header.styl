@@ -6,7 +6,7 @@
   z-index 15
   border-bottom-right-radius 15px
   border-bottom-left-radius 15px
-  box-shadow 0 4px 10px rgba(0, 0, 0, 0.5)
+  box-shadow 0 4px 5px rgba(0, 0, 0, 0.3)
 
   &:after
     position absolute
@@ -20,6 +20,7 @@
     border-bottom-left-radius 15px
 
   &__body
+    position relative
     flex-set row nowrap
     flex-content-position center center
     padding 10px 0 10px 0
@@ -27,9 +28,11 @@
     *
       z-index 5
 
-    @media (max-width 560px)
-      .searchbar
-        display none
+    .burger-btn
+      position absolute
+      top 50%
+      right 0%
+      transform translate(-50%, -50%)
 
 .fixed-header
   position fixed
@@ -42,7 +45,7 @@
   top 0
   right -100%
   z-index 4
-  block-size 100% 100%
+  block-size 100%
   font-size 30px
   color #fff
   flex-set column nowrap
