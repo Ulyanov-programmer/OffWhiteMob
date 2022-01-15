@@ -13,4 +13,4 @@ Doesn't have a PC adaptive.
 
 You can see this [this on GitHub Pages].
 
-[this on GitHub Pages]: https://ulyanov-programmer.github.io/Project
+[this on GitHub Pages]: https://ulyanov-programmer.github.io/OffWhiteMob/OffWhiteMob/
