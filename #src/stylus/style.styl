@@ -66,6 +66,7 @@ body
   color #fff
   width 100%
   flex-set row nowrap
+  padding 0 0 20px 0
 
   &:before
     background #909090
@@ -96,7 +97,7 @@ body
 
 .offer
   flex-set row nowrap
-  padding 20px 0 20px 0
+  padding 15px 0 15px 0
 
   &_right
     flex-set row-reverse nowrap
@@ -129,6 +130,7 @@ body
 
   &__collab-brand-imgcontainer
     position relative
+
     img
       block-size 100%
 
@@ -188,7 +190,7 @@ body
 
 .collection
   align-items center
-  padding 10px 0 10px 0
+  padding 15px 0 15px 0
 
   &__body
     padding 20px 20px 20px 20px
@@ -197,18 +199,21 @@ body
       background #EBF5ED
       filter blur(1px)
 
-  .collection__image
+  &__photo-container
     position relative
-
     &:after
       position absolute
       bottom -2%
-      left 50%
-      transform translate(-50%, -50%)
+      left: 50%
+      transform: translate(-50%, 0)
+      z-index 2
       height 7px
-      width 50%
+      width 55%
       background #000
       content ''
+
+  .collection__image
+    position relative
 
   &__title-block
     padding 20px 20px 20px 20px
